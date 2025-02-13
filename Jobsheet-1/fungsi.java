@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class fungsi {
+public class Fungsi {
 
     public static void hitungPendapatan(int[][] stok, int[][] hargaBunga) {
         // Harga per jenis bunga
