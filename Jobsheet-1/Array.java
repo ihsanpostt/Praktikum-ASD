@@ -3,6 +3,9 @@ public class Array {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         String[] mk = {"Pancasila", "Konsep Teknologi Informasi","Critical Thinking Problem Solving", "Matematika Dasar", "Bahasa Inggris", "Dasar Pemrograman", "Praktikum Dasar Pemrograman", "Keselamatan dan Kesehatan Kerja"};
+        System.out.println("===============================");
+        System.out.println("Program Menghitung  IP Semester");
+        System.out.println("===============================");
         double[] nilai = new double[mk.length];
         double[] bobotNilai = new double[mk.length];
         for (int i = 0; i < mk.length; i++) {
