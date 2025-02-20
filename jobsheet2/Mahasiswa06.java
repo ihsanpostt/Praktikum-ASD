@@ -6,7 +6,6 @@ public class Mahasiswa06 {
     String kelas;
 
 
-
     void tampilkanInformasi(){
         System.out.println("Nama : " + nama);
         System.out.println("NIM : " + nim);
@@ -25,11 +24,9 @@ public class Mahasiswa06 {
         kelas = kls;
     }
     
-    
     void ubahKelas(String kelasBaru){
         kelas = kelasBaru;
     }
-    
     void updateIPK(double ipkBaru){
         if (ipk >= 0 && ipk <=4) {
             ipk = ipkBaru;
