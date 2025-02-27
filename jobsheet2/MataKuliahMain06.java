@@ -1,11 +1,11 @@
 public class MataKuliahMain06 {
     public static void main(String[] args) {
-        MataKuliah06 mk1 = new MataKuliah06();
+        Matakuliah06 mk1 = new Matakuliah06();
         System.out.println("Informasi Mata Kuliah 1:");
         mk1.tampilInformasi();
         System.out.println();
 
-        MataKuliah06 mk2 = new MataKuliah06("ASD", "Struktur data dan algoritma", 3, 4);
+        Matakuliah06 mk2 = new Matakuliah06("ASD", "Struktur data dan algoritma", 3, 4);
         System.out.println("Informasi Mata Kuliah 2:");
         mk2.tampilInformasi();
         System.out.println();
@@ -14,7 +14,7 @@ public class MataKuliahMain06 {
         mk2.tambahJam(2);
         mk2.kurangiJam(3);
 
-        MataKuliah06 mk3 = new MataKuliah06("AGM", "Agama", 2, 3);
+        Matakuliah06 mk3 = new Matakuliah06("AGM", "Agama", 2, 3);
         System.out.println("Informasi Mata Kuliah 3:");
         mk3.tampilInformasi();
         System.out.println();

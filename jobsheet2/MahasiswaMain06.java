@@ -1,6 +1,6 @@
 public class MahasiswaMain06 {
     public static void main(String[] args) {
-        Mahasiswa6 mhsl = new Mahasiswa6 ();
+        Mahasiswa06 mhsl = new Mahasiswa06 ();
         mhsl.nama = "Muhammad Ali Farhan";
         mhsl.nim = "244107020189";
         mhsl.kelas = "ST 2J";
@@ -11,11 +11,11 @@ public class MahasiswaMain06 {
         mhsl.updateIPK(3.60);
         mhsl.tampilkanInformasi();
         
-        Mahasiswa6 mhs2 = new Mahasiswa6("annisa nabila", "2141720160", 3.25, "TI 2L");
+        Mahasiswa06 mhs2 = new Mahasiswa06("annisa nabila", "2141720160", 3.25, "TI 2L");
         mhs2.updateIPK(3.30);
         mhs2.tampilkanInformasi();
 
-        Mahasiswa6 mhsihsan = new Mahasiswa6 ("Burhanuddin Ihsan", "244107020189", 3.88, "ST 2J");
+        Mahasiswa06 mhsihsan = new Mahasiswa06 ("Burhanuddin Ihsan", "244107020189", 3.88, "ST 2J");
         mhsihsan.tampilkanInformasi();
     }
 
