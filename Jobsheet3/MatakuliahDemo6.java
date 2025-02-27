@@ -1,15 +1,18 @@
+import java.util.Scanner;
+
 public class MatakuliahDemo6 {
     public static void main(String[] args) {
-        Matakuliah6[] arrayOfMatakuliah = new Matakuliah6[3];
-        
-        for (int i = 0; i < 3; i++) {
-            System.out.println("Masukkan Data Matakuliah ke-" + (i + 1));
-            arrayOfMatakuliah[i] = new Matakuliah6("", "", 0, 0);
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Masukkan Jumlah Mahasiswa: ");
+        int jmlMhs = Integer.parseInt(sc.nextLine());
+        Matakuliah6[] arrayOfMatakuliah = new Matakuliah6[jmlMhs];
+        for (int i = 0; i < jmlMhs; i++) {
+            System.out.println("Masukkan Data Matakuliah ke-"+(i+1));
+            arrayOfMatakuliah[i] = new Matakuliah6(null, null, 0, 0);
             arrayOfMatakuliah[i].tambahData();
         }
-        
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < jmlMhs; i++) {
             arrayOfMatakuliah[i].tampilkanData(i);
         }
-    }
+    }    
 }
