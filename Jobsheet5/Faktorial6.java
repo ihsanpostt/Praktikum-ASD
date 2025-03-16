@@ -1,4 +1,4 @@
-public class Faktorial {
+public class Faktorial6 {
     int faktorialBF(int n) {
         int fakto = 1;
         for (int i = 1; i <= n; i++) {
