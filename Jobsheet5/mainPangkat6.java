@@ -23,6 +23,5 @@ public class mainPangkat6 {
     for (Pangkat6 p : png) { 
         System.out.println(p.nilai+"^"+p.pangkat+": "+p.pangkatDC(p.nilai, p.pangkat));   
          } 
- 
     } 
 } 

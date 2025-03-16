@@ -23,7 +23,6 @@ public class Pangkat6 {
             }else{ 
                 return(pangkatDC(a, n/2)*pangkatDC(a, n/2)); 
             } 
- 
         } 
     } 
 } 
