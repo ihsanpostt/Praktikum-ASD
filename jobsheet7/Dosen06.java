@@ -1,16 +1,18 @@
-class Dosen06 {
+public class Dosen06 {
     String kode, nama;
-    boolean jenisKelamin;
+    Boolean jenisKelamin;
     int usia;
-
-    public Dosen06(String kode, String nama, boolean jenisKelamin, int usia) {
-        this.kode = kode;
-        this.nama = nama;
-        this.jenisKelamin = jenisKelamin;
-        this.usia = usia;
+    Dosen06(String kd,String name, Boolean jk,int age){
+        kode = kd;
+        nama = name;
+        jenisKelamin = jk;
+        usia = age;
     }
 
-    public void tampil() {
-        System.out.println("Kode: " + kode + ", Nama: " + nama + ", JK: " + (jenisKelamin ? "Perempuan" : "Laki-laki") + ", Usia: " + usia);
+    void tampil(){
+        System.out.println("Kode Dosen    :"+kode);
+        System.out.println("Nama          :"+nama);
+        System.out.println("Jenis Kelamin :"+(jenisKelamin?"Perempuan":"Laki-laki"));
+        System.out.println("Usia          :"+usia);
     }
 }
