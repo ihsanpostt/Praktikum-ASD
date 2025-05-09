@@ -11,6 +11,8 @@ public class MahasiswaDemo6 {
             System.out.println("2. Menilai Tugas");
             System.out.println("3. Melihat Tugas Teratas");
             System.out.println("4. Melihat Daftar Tugas");
+            System.out.println("5. Melihat Tugas Terbawah");
+             System.out.println("6. Jumlah tugas yang dikumpulkan");
             System.out.print("Pilih: ");
             pilih = scan.nextInt();
             scan.nextLine();
@@ -29,12 +31,14 @@ public class MahasiswaDemo6 {
                     break;
                 case 2:
                     Mahasiswa6 dinilai = stack.pop();
-                    if (dinilai !=null) {
+                        if (dinilai !=null) {
                         System.out.println("Menilai tugas dari " + dinilai.nama);
                         System.out.print("Masukkan nilai (0-100): ");
                         int nilai = scan.nextInt();
                         dinilai.tugasDinilai(nilai);
-                        System.out.printf("Nilai tugas %s adalah %d\n",dinilai.nama,nilai);
+                        System.out.printf("Nilai tugas %s adalah%d\n",dinilai.nama,nilai);
+                        String biner = stack.konversiDesimalKeBiner(nilai);
+                        System.out.println("Nilai Biner Tugas: " + biner);
                     }
                     break;
                 case 3:
@@ -47,6 +51,16 @@ public class MahasiswaDemo6 {
                     System.out.println("Daftar semua tugas");
                     System.out.println("Nama \t NIM \t Kelas");
                     stack.print();
+                    break;
+                case 5:
+                    Mahasiswa6 lihatTerbawah = stack.peekBottom();
+                    if (lihatTerbawah != null) {
+                        System.out.println("Tugas pertama dikumpulkan oleh " + lihatTerbawah.nama);
+                    }
+                    break;
+                case 6:
+                    int jumlahTugas = stack.jumlahTugas();
+                    System.out.println("jumlah tugas yang telah dikumpulkan : " + jumlahTugas);
                     break;
                 default:
                     System.out.println("Pilihan tidak valid");
