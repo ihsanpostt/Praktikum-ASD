@@ -13,12 +13,8 @@ public class Mahasiswa06 {
             this.kelas = kelas;
             this.ipk = ipk;
         }
-    
-        void tampilInformasi() {
-            System.out.println("Nama : " + this.nama);
-            System.out.println("NIM : " + this.nim);
-            System.out.println("Kelas : " + this.kelas);
-            System.out.println("IPK : " + this.ipk);
-            System.out.println("====================================");
+      
+        public void tampilInformasi() {
+        System.out.printf("%-10s %-10s %-4s %.1f\n", nama, nim, kelas,ipk);
         }
 }
