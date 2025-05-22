@@ -65,7 +65,6 @@ public class KrsMain {
                     System.out.println("Pilihan tidak valid.");
             }
         } while (pilihan != 0);
-
         sc.close();
     }
 }
