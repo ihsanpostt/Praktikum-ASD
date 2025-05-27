@@ -92,4 +92,4 @@ public class QueueMahasiswaMain {
             }
         } while (pilihan != 0);
     }
-}
+}   
