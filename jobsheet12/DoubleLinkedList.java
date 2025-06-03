@@ -1,4 +1,4 @@
-    public class DoubleLinkedList {
+public class DoubleLinkedList {
     Node06 head;
     Node06 tail;
 

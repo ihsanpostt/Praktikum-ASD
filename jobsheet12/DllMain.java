@@ -28,6 +28,13 @@ public class DllMain {
             System.out.println("4. Tambahkan setelah mahasiswa:");
             System.out.println("5. Hapus di awal");
             System.out.println("6. Hapus di akhir");
+            System.out.println("7. Hapus setelah mahasiswa:");
+            System.out.println("8. Hapus pada index tertentu");
+            System.out.println("9. Tampilkan data");
+            System.out.println("10. Melihat data pertama:");
+            System.out.println("11. Melihat data terakhir:");
+            System.out.println("12. Melihat data pada index tertentu:");
+            System.out.println("13. Melihat ukuran list:");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
             pilihan = scan.nextInt();
@@ -83,6 +90,57 @@ public class DllMain {
                     System.out.println("list kosong");
                    }
                     break;
+                }
+                case 7:
+                {
+                System.out.print("Masukkan nama mahasiswa : ");
+                String namaMhs = scan.next(); 
+
+                list.removeAfter(namaMhs);
+                break;
+                }
+                case 8:
+                {
+                    System.out.print("Masukkan index : ");
+                    int index = scan.nextInt();
+                    list.remove(index);
+                    break;
+                }
+                case 9:
+                    list.print();
+                    break;
+                case 10:
+                {
+                   Mahasiswa06 mhs = list.getFirst();
+                   if (mhs != null) {
+                       mhs.tampilInformasi();
+                    }
+                    break;
+                }
+                case 11:
+                {
+                   Mahasiswa06 mhs = list.getLast();
+                   if (mhs != null) {
+                       mhs.tampilInformasi();
+                    }
+                   break;
+                }
+                case 12:
+                {
+                    System.out.print("Masukkan index : ");
+                    int index = scan.nextInt();
+
+                   Mahasiswa06 mhs = list.getIndex(index);
+                   if (mhs != null) {
+                       mhs.tampilInformasi();
+                    }
+                   break;
+                }
+                case 13:
+                {
+                   int size = list.getSize();
+                   System.out.println("size list : " + size);
+                   break;
                 }
                 case 0:
                     System.out.println("Keluar dari program.");
