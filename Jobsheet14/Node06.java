@@ -1,3 +1,4 @@
+package Jobsheet14;
 public class Node06 {
     Mahasiswa06 mhs;
     Node06 left;

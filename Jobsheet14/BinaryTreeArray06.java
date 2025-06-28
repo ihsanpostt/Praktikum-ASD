@@ -1,3 +1,4 @@
+package Jobsheet14;
 public class BinaryTreeArray06 {
     Mahasiswa06[] dataMhs;
     int idxLast;

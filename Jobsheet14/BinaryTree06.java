@@ -1,3 +1,4 @@
+package Jobsheet14;
 public class BinaryTree06 {
     Node06 root;   
 
